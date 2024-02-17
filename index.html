@@ -35,8 +35,9 @@
         .inter {
             font-family: "Inter", sans-serif;
         }
+
         .raleway {
-            font-family:  "Raleway", sans-serif;
+            font-family: "Raleway", sans-serif;
         }
     </style>
 </head>
@@ -47,31 +48,38 @@
         <nav class="raleway ">
             <div class="navbar bg-base-100 pl-0">
                 <div class="navbar-start">
-                  <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Destination</a></li>
+                            <li><a>Search</a></li>
+                        </ul>
                     </div>
-                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                      <li><a>Home</a></li>
-                      <li><a>About</a></li>
-                      <li><a>Destination</a></li>
-                      <li><a>Search</a></li>
-                    </ul>
-                  </div>
-                  <a class="btn btn-ghost text-4xl font-extrabold pl-0">BUS-Ticket</a>
+                    <a class="btn btn-ghost text-4xl font-extrabold pl-0">BUS-Ticket</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
-                  <ul class="menu menu-horizontal px-1">
-                    <li><a>Home</a></li>
-                      <li><a>About</a></li>
-                      <li><a>Destination</a></li>
-                      <li><a>Search</a></li>
-                  </ul>
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Destination</a></li>
+                        <li><a>Search</a></li>
+                    </ul>
                 </div>
                 <div class="navbar-end">
-                  <a class="btn font-bold text-xl bg-primary-color bg-opacity-10 border-2 border-primary-color border-opacity-40  text-primary-color ">Bus <img src="images/bus-logo.png" class="w-6"  alt=""> </a>
+                    <a
+                        class="btn font-bold text-xl bg-primary-color bg-opacity-10 border-2 border-primary-color border-opacity-40  text-primary-color ">Bus
+                        <img src="images/bus-logo.png" class="w-6" alt=""> </a>
                 </div>
-              </div>
+            </div>
         </nav>
         <!-- nav section end -->
 
@@ -80,16 +88,60 @@
             <div class="hero rounded-3xl " style="background-image: url(images/banner.png);">
                 <div class="hero-overlay rounded-3xl opacity-50 size-fit"></div>
                 <div class="hero-content text-center text-neutral-content ">
-                  <div class="pt-32 pb-48 space-y-10">
-                    <h1 class="mb-5 text-6xl space-y-3 raleway font-extrabold"><p>End-to-End Travel with</p><p class="text-primary-color ">HABIB Paribahan</p></h1>
-                    <p class="mb-5 inter w-3/4 mx-auto text-base">Experience seamless end-to-end travel with HABIB Paribahan, ensuring comfort, safety, and reliability throughout your journey. Enjoy hassle-free transportation with our trusted services.</p>
-                    <button class="btn btn-primary bg-primary-color border-none text-black text-xl font-bold">Buy Tickets</button>
-                  </div>
+                    <div class="pt-32 pb-48 space-y-10">
+                        <h1 class="mb-5 text-6xl space-y-3 raleway font-extrabold">
+                            <p>End-to-End Travel with</p>
+                            <p class="text-primary-color ">HABIB Paribahan</p>
+                        </h1>
+                        <p class="mb-5 inter w-3/4 mx-auto text-base">Experience seamless end-to-end travel with HABIB
+                            Paribahan, ensuring comfort, safety, and reliability throughout your journey. Enjoy
+                            hassle-free transportation with our trusted services.</p>
+                        <button class="btn btn-primary bg-primary-color border-none text-black text-xl font-bold">Buy
+                            Tickets</button>
+                    </div>
                 </div>
-              </div>
+            </div>
         </section>
         <!-- Banner section end -->
-        
+
+        <!-- discount section start-->
+        <section>
+            <div class="my-20 space-y-8">
+                <div class="">
+                    <h1 class="raleway font-extrabold text-4xl text-center">Best offers for you</h1>
+                </div>
+                <div class="flex gap-8">
+                    <div class="bg-[#FFBF0F] flex justify-around w-full rounded-xl ">
+                        <div class="inter flex flex-col justify-center gap-2">
+                            <h1 class="text-4xl font-extrabold">15% OFF</h1>
+                            <h4 class="text-xl font-semibold">on your next purchase</h4>
+                            <p class="text-base opacity-70">use by January 2024</p>
+                        </div>
+                        <div class=""><img src="images/cupon-devider.png" class="" alt=""></div>
+                        <div class="raleway flex flex-col justify-center gap-2">
+                            <h1 class="text-4xl font-extrabold">NEW15</h1>
+                            <p class="text-base opacity-70">Coupon Code</p>
+                        </div>
+                    </div>
+                    <div class="bg-[#F78C9C] flex justify-around w-full rounded-xl ">
+                        <div class="inter flex flex-col justify-center gap-2">
+                            <h1 class="text-4xl font-extrabold">20% OFF</h1>
+                            <h4 class="text-xl font-semibold">on your next purchase </h4>
+                            <p class="text-base opacity-70">use by January 2024</p>
+                        </div>
+                        <div class=""><img src="images/cupon-devider.png" class="" alt=""></div>
+                        <div class="raleway flex flex-col justify-center gap-2">
+                            <h1 class="text-4xl font-extrabold">Couple 20</h1>
+                            <p class="text-base opacity-70">Coupon Code</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-center">
+                    <button class="btn text-primary-color bg-white border-primary-color">See All Offers</button>
+                </div>
+            </div>
+        </section>
+        <!-- discount section done -->
     </header>
 
     <main>
