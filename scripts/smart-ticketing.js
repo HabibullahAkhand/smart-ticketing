@@ -49,6 +49,10 @@ function myFunction(elementId) {
     // disable apply btn
     applyBtnDisable(updatedBookingSet);
    
+    inputFildEnable('mobile-number');
+    inputFildEnable('input-name');
+    inputFildEnable('input-email');
+
 }
 document.getElementById('mobile-number').addEventListener('keyup', function(){
     const mobileNumber=event.target.value;

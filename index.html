@@ -394,13 +394,13 @@
                         </ul>
                     </div>
 
-                    <form>
+                    <form id="modalForm">
                         <div class=" my-6">
                             <label class="form-control w-full">
                                 <div class="label">
                                     <span class="label-text font-bold text-xl">Passenger Name*</span>
                                 </div>
-                                <input type="text" placeholder="Enter your name"
+                                <input disabled id="input-name" type="text" placeholder="Enter your name"
                                     class="input input-bordered w-full py-8" required />
                             </label>
                         </div>
@@ -410,7 +410,7 @@
                                 <div class="label">
                                     <span class="label-text font-bold text-xl">Phone Number*</span>
                                 </div>
-                                <input id="mobile-number" type="number" placeholder="Enter your phone number"
+                                <input disabled id="mobile-number" type="number" placeholder="Enter your phone number"
                                     class="input input-bordered w-full py-8" required />
                             </label>
                         </div>
@@ -420,13 +420,13 @@
                                 <div class="label">
                                     <span class="label-text font-bold text-xl">Email ID</span>
                                 </div>
-                                <input type="text" placeholder="Enter your email id"
+                                <input disabled id="input-email" type="email" placeholder="Enter your email id"
                                     class="input input-bordered w-full py-8" required />
                             </label>
                         </div>
 
                         <button id="next-btn" type="submit"
-                            class="btn btn-wide w-full text-xl font-bold bg-primary-color text-white btn-lg"
+                            class="btn btn-wide w-full text-xl font-bold bg-primary-color text-white btn-lg hover:bg-primary-color hover:opacity-70"
                             disabled onclick="my_modal_4.showModal()">Next</button>
                         <dialog id="my_modal_4" class="modal">
                             <div class="modal-box w-1/2 max-w-3xl flex flex-col items-center py-10">
@@ -458,8 +458,8 @@
         <section class="bg-black text-white p-20">
             <div class="container mx-auto flex justify-between">
                 <div class="space-y-3">
-                    <h1 class="text-3xl font-bold">P-Ticket</h1>
-                    <p class="opacity-50">P-Ticket is a digital platform to make your <br> daily commuting better.</p>
+                    <h1 class="text-3xl font-bold">BUS-Ticket</h1>
+                    <p class="opacity-50">BUS-Ticket is a digital platform to make your <br> daily commuting better.</p>
                 </div>
                 <div class="space-y-2">
                     <h4>Download our app</h4>
@@ -474,7 +474,7 @@
             </div>
             <div class="container mx-auto border-t-[1px] border-gray-800 border-dashed my-5">
                 <div class="mt-5 flex justify-between opacity-50">
-                    <p>@all rights reserved, P-Ticket services limited.2024</p>
+                    <p>@all rights reserved, BUS-Ticket services limited.2024</p>
                     <p class="space-x-10 " ><span >Terms & condition </span>   <span>Return & refund policy  </span>     <span>Privacy policy</span></p>
                 </div>
             </div>

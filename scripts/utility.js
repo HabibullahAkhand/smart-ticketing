@@ -65,6 +65,10 @@ function applyBtnDisable(value){
         getCoupon();
     }
 }
+function inputFildEnable(elementId){
+    const applyButton=document.getElementById(elementId);
+    applyButton.removeAttribute('disabled');
+}
 function hideSection(elementId){
     const hideCouponSection=document.getElementById(elementId);
     hideCouponSection.classList.add('hidden');
@@ -91,3 +95,22 @@ function getCoupon(){
         }
     })
 }
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const modalForm = document.getElementById("modalForm");
+    const modal = document.getElementById("my_modal_4");
+    const continueButton = modal.querySelector(".modal-action button");
+
+    modalForm.addEventListener("submit", function(event) {
+        event.preventDefault(); // Prevent default form submission behavior
+        // Your custom form submission logic goes here
+        // For now, let's assume the form submission logic is handled elsewhere
+    });
+
+    continueButton.addEventListener("click", function() {
+        modal.close(); // Close the modal when "Continue" button is clicked
+    });
+});
+
+
