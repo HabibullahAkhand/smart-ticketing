@@ -42,19 +42,25 @@ function myFunction(elementId) {
     // Total amount
     totalPrice(updatedBookingSet);
 
+    // grand total 
+    const grandTotal=document.getElementById('grand-total');
+    grandTotal.innerText=totalPrice(updatedBookingSet);
+    
     // disable apply btn
     applyBtnDisable(updatedBookingSet);
-
-    // // disable next button
-    // const mobileNumber = document.getElementById('mobile-number');
-    // const numberText = mobileNumber.innerText;
-    // const number = parseInt(numberText);
-    // console.log(number);
-    // // if(updatedBookingSet>0 && number)
-    
-    
-
-
+   
 }
+document.getElementById('mobile-number').addEventListener('keyup', function(){
+    const mobileNumber=event.target.value;
+    const lengthOfNumber=mobileNumber.length;
+    const bookingSetElement = document.getElementById('booking-seat');
+    const bookingSetText = bookingSetElement.innerText;
+    const bookingSet = parseInt(bookingSetText);
+
+    if(lengthOfNumber>0 && bookingSet>0){
+        const applyButton=document.getElementById('next-btn');
+        applyButton.removeAttribute('disabled');
+    }
+})
 
 

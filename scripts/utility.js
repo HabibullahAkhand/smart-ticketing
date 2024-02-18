@@ -9,14 +9,14 @@ function setTextElementValueById(elementId, value) {
 }
 
 function calculationTable(setNumber) {
-    var ulElement = document.createElement('ul');
+    let ulElement = document.createElement('ul');
     ulElement.classList.add('flex', 'justify-between', 'my-5');
 
-    var p1 = document.createElement('p');
+    let p1 = document.createElement('p');
     p1.textContent = setNumber;
-    var p2 = document.createElement('p');
+    let p2 = document.createElement('p');
     p2.textContent = 'Economoy';
-    var p3 = document.createElement('p');
+    let p3 = document.createElement('p');
     p3.textContent = '550';
 
     ulElement.appendChild(p1);
@@ -28,7 +28,7 @@ function calculationTable(setNumber) {
 }
 
 function disableOnClick(elementId) {
-    var element = document.getElementById(elementId);
+    let element = document.getElementById(elementId);
     if (element) {
         element.onclick = function(event) {
             event.preventDefault();
@@ -55,6 +55,7 @@ function totalPrice(totalTicket){
     let totalTicketPrice=totalTicket*550;
     const price=document.getElementById('total-price');
     price.innerText=totalTicketPrice;
+    return totalTicketPrice;
 }
 
 function applyBtnDisable(value){
