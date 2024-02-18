@@ -1,7 +1,7 @@
 function scrollToElement(elementId) {
     let element = document.getElementById(elementId);
     if (element) {
-        var offsetTop = element.getBoundingClientRect().top + window.pageYOffset;
+        let offsetTop = element.getBoundingClientRect().top + window.pageYOffset;
         window.scrollTo({
             top: offsetTop,
             behavior: 'smooth'
@@ -38,6 +38,21 @@ function myFunction(elementId) {
     if (updatedBookingSet === 4) {
         disableAllSeats();
     }
+
+    // Total amount
+    totalPrice(updatedBookingSet);
+
+    // disable apply btn
+    applyBtnDisable(updatedBookingSet);
+
+    // // disable next button
+    // const mobileNumber = document.getElementById('mobile-number');
+    // const numberText = mobileNumber.innerText;
+    // const number = parseInt(numberText);
+    // console.log(number);
+    // // if(updatedBookingSet>0 && number)
+    
+    
 
 
 }
