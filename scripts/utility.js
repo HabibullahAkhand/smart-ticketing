@@ -54,7 +54,7 @@ function alertSignalOfWrongCoupon(){
 
 
 function disableAllSeats() {
-    const seatElements = document.querySelectorAll('.py-4');
+    const seatElements = document.querySelectorAll('.py-1');
     seatElements.forEach(seat => {
         seat.onclick = null;
         seat.style.cursor = 'not-allowed';
