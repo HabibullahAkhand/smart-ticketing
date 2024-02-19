@@ -1,6 +1,7 @@
 function setBackgroundColorById(elementId) {
     const element = document.getElementById(elementId);
     element.classList.add('bg-primary-color');
+    element.classList.add('text-white');
 }
 
 function setTextElementValueById(elementId, value) {
@@ -60,8 +61,10 @@ function totalPrice(totalTicket){
 
 function applyBtnDisable(value){
     const applyButton=document.getElementById('coupon-apply-btn');
+    const inputFild=document.getElementById('coupon-input-fild');
     if (value === 4) {
         applyButton.removeAttribute('disabled');
+        inputFild.removeAttribute('disabled');
         getCoupon();
     }
 }
